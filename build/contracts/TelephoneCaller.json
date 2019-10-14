@@ -1,0 +1,752 @@
+{
+  "contractName": "TelephoneCaller",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_telephone",
+          "type": "address"
+        }
+      ],
+      "name": "callTelephone",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.18+commit.9cf6e910\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_telephone\",\"type\":\"address\"}],\"name\":\"callTelephone\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/mikes/OneDrive/Desktop/Ethereum/Ethernaut/contracts/TelephoneCaller.sol\":\"TelephoneCaller\"},\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/mikes/OneDrive/Desktop/Ethereum/Ethernaut/contracts/TelephoneCaller.sol\":{\"keccak256\":\"0xa575393d16f2df98bc47904f10e28d1ac348001e2111949a0c2d563951a89c48\",\"urls\":[\"bzzr://f5ef47789ec205771ed498758de233cb1999f5753f5791f666cf4f1e468ae336\"]}},\"version\":1}",
+  "bytecode": "0x6060604052341561000f57600080fd5b6101628061001e6000396000f300606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632bd217ac14610046575b600080fd5b341561005157600080fd5b61007d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061007f565b005b60008190508073ffffffffffffffffffffffffffffffffffffffff1663a6f9dae1336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b151561011e57600080fd5b6102c65a03f1151561012f57600080fd5b50505050505600a165627a7a723058204c8995e8dce6ed932fcfdbdd06822cd7b93399f8b4adecc65971bf8c9c4cabf00029",
+  "deployedBytecode": "0x606060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632bd217ac14610046575b600080fd5b341561005157600080fd5b61007d600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061007f565b005b60008190508073ffffffffffffffffffffffffffffffffffffffff1663a6f9dae1336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b151561011e57600080fd5b6102c65a03f1151561012f57600080fd5b50505050505600a165627a7a723058204c8995e8dce6ed932fcfdbdd06822cd7b93399f8b4adecc65971bf8c9c4cabf00029",
+  "sourceMap": "105:193:3:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "105:193:3:-;;;;;;;;;;;;;;;;;;;;;;;;139:156;;;;;;;;;;;;;;;;;;;;;;;;;;;;;200:19;232:10;200:43;;254:9;:21;;;276:10;254:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;139:156;;:::o",
+  "source": "pragma solidity ^0.4.18;\r\n\r\ncontract Telephone {\r\n    function changeOwner(address _owner) public;\r\n}\r\n\r\ncontract TelephoneCaller {\r\n\r\n    function callTelephone(address _telephone) public {\r\n        Telephone telephone = Telephone(_telephone);\r\n        telephone.changeOwner(msg.sender);\r\n    }\r\n}",
+  "sourcePath": "C:/Users/mikes/OneDrive/Desktop/Ethereum/Ethernaut/contracts/TelephoneCaller.sol",
+  "ast": {
+    "absolutePath": "/C/Users/mikes/OneDrive/Desktop/Ethereum/Ethernaut/contracts/TelephoneCaller.sol",
+    "exportedSymbols": {
+      "Telephone": [
+        185
+      ],
+      "TelephoneCaller": [
+        205
+      ]
+    },
+    "id": 206,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 179,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 185,
+        "linearizedBaseContracts": [
+          185
+        ],
+        "name": "Telephone",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "id": 184,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "changeOwner",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 182,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 181,
+                  "name": "_owner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 184,
+                  "src": "75:14:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 180,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "75:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "74:16:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 183,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "97:0:3"
+            },
+            "scope": 185,
+            "src": "54:44:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 206,
+        "src": "28:73:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 205,
+        "linearizedBaseContracts": [
+          205
+        ],
+        "name": "TelephoneCaller",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 203,
+              "nodeType": "Block",
+              "src": "189:106:3",
+              "statements": [
+                {
+                  "assignments": [
+                    191
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 191,
+                      "name": "telephone",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 204,
+                      "src": "200:19:3",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Telephone_$185",
+                        "typeString": "contract Telephone"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 190,
+                        "name": "Telephone",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 185,
+                        "src": "200:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Telephone_$185",
+                          "typeString": "contract Telephone"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 195,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 193,
+                        "name": "_telephone",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 187,
+                        "src": "232:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 192,
+                      "name": "Telephone",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 185,
+                      "src": "222:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_Telephone_$185_$",
+                        "typeString": "type(contract Telephone)"
+                      }
+                    },
+                    "id": 194,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "222:21:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Telephone_$185",
+                      "typeString": "contract Telephone"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "200:43:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 199,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 217,
+                          "src": "276:3:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 200,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "276:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 196,
+                        "name": "telephone",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 191,
+                        "src": "254:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Telephone_$185",
+                          "typeString": "contract Telephone"
+                        }
+                      },
+                      "id": 198,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "changeOwner",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 184,
+                      "src": "254:21:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address) external"
+                      }
+                    },
+                    "id": 201,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "254:33:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 202,
+                  "nodeType": "ExpressionStatement",
+                  "src": "254:33:3"
+                }
+              ]
+            },
+            "id": 204,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "callTelephone",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 188,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 187,
+                  "name": "_telephone",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 204,
+                  "src": "162:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 186,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "162:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "161:20:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 189,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "189:0:3"
+            },
+            "scope": 205,
+            "src": "139:156:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 206,
+        "src": "105:193:3"
+      }
+    ],
+    "src": "0:298:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/mikes/OneDrive/Desktop/Ethereum/Ethernaut/contracts/TelephoneCaller.sol",
+    "exportedSymbols": {
+      "Telephone": [
+        185
+      ],
+      "TelephoneCaller": [
+        205
+      ]
+    },
+    "id": 206,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 179,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 185,
+        "linearizedBaseContracts": [
+          185
+        ],
+        "name": "Telephone",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "id": 184,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "changeOwner",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 182,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 181,
+                  "name": "_owner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 184,
+                  "src": "75:14:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 180,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "75:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "74:16:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 183,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "97:0:3"
+            },
+            "scope": 185,
+            "src": "54:44:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 206,
+        "src": "28:73:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 205,
+        "linearizedBaseContracts": [
+          205
+        ],
+        "name": "TelephoneCaller",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 203,
+              "nodeType": "Block",
+              "src": "189:106:3",
+              "statements": [
+                {
+                  "assignments": [
+                    191
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 191,
+                      "name": "telephone",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 204,
+                      "src": "200:19:3",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Telephone_$185",
+                        "typeString": "contract Telephone"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 190,
+                        "name": "Telephone",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 185,
+                        "src": "200:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Telephone_$185",
+                          "typeString": "contract Telephone"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 195,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 193,
+                        "name": "_telephone",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 187,
+                        "src": "232:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 192,
+                      "name": "Telephone",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 185,
+                      "src": "222:9:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_Telephone_$185_$",
+                        "typeString": "type(contract Telephone)"
+                      }
+                    },
+                    "id": 194,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "222:21:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Telephone_$185",
+                      "typeString": "contract Telephone"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "200:43:3"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 199,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 217,
+                          "src": "276:3:3",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 200,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "276:10:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 196,
+                        "name": "telephone",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 191,
+                        "src": "254:9:3",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Telephone_$185",
+                          "typeString": "contract Telephone"
+                        }
+                      },
+                      "id": 198,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "changeOwner",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 184,
+                      "src": "254:21:3",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address) external"
+                      }
+                    },
+                    "id": 201,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "254:33:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 202,
+                  "nodeType": "ExpressionStatement",
+                  "src": "254:33:3"
+                }
+              ]
+            },
+            "id": 204,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "callTelephone",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 188,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 187,
+                  "name": "_telephone",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 204,
+                  "src": "162:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 186,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "162:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "161:20:3"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 189,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "189:0:3"
+            },
+            "scope": 205,
+            "src": "139:156:3",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 206,
+        "src": "105:193:3"
+      }
+    ],
+    "src": "0:298:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0xB09b8670D56ebec7aD4f2F8A9356e89a1Eb59D48",
+      "transactionHash": "0x60765b7f0915f58affeb0e4a3e82aa804ba79af1867d56078aa003982a941e31"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x15b43C4a6D88F1cB813E1AAFa504836E25c83267",
+      "transactionHash": "0xd4e5c6c183591b533facd207fb6395bdc4293fba1438ac7e5c6f156f057eef8e"
+    }
+  },
+  "schemaVersion": "3.0.16",
+  "updatedAt": "2019-10-14T22:51:41.030Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
