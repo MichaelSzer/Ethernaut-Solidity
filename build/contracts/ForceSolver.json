@@ -1,0 +1,402 @@
+{
+  "contractName": "ForceSolver",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "adr",
+          "type": "address"
+        }
+      ],
+      "name": "end",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.4.18+commit.9cf6e910\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"adr\",\"type\":\"address\"}],\"name\":\"end\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/mikes/OneDrive/Desktop/Ethereum/Ethernaut/contracts/ForceSolver.sol\":\"ForceSolver\"},\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/mikes/OneDrive/Desktop/Ethereum/Ethernaut/contracts/ForceSolver.sol\":{\"keccak256\":\"0x188ff14f1352a6172b10f9a9a19b0ee5b50f09e8e7167e3524586f95dbe773c6\",\"urls\":[\"bzzr://a387eec2a9c862e7281840e3483dbeb1f51a8593d673389665e9e9e424ff29ce\"]}},\"version\":1}",
+  "bytecode": "0x60606040523415600e57600080fd5b60b58061001c6000396000f300606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638c4dd39d146044575b600080fd5b606e600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506070565b005b8073ffffffffffffffffffffffffffffffffffffffff16ff00a165627a7a723058201bd5d1e0d605674333db37e9538764f696ffcad3d454d231dd0d0e8f7cb4db730029",
+  "deployedBytecode": "0x606060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680638c4dd39d146044575b600080fd5b606e600480803573ffffffffffffffffffffffffffffffffffffffff169060200190919050506070565b005b8073ffffffffffffffffffffffffffffffffffffffff16ff00a165627a7a723058201bd5d1e0d605674333db37e9538764f696ffcad3d454d231dd0d0e8f7cb4db730029",
+  "sourceMap": "48:112:1:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "48:112:1:-;;;;;;;;;;;;;;;;;;;;;;;;78:79;;;;;;;;;;;;;;;;;;;;;145:3;132:17;;",
+  "source": "pragma solidity ^0.4.18;\r\n\r\ncontract Meow {}\r\n\r\ncontract ForceSolver {\r\n\r\n    function end(address adr) external payable {\r\n        selfdestruct(adr);\r\n    }\r\n}",
+  "sourcePath": "C:/Users/mikes/OneDrive/Desktop/Ethereum/Ethernaut/contracts/ForceSolver.sol",
+  "ast": {
+    "absolutePath": "/C/Users/mikes/OneDrive/Desktop/Ethereum/Ethernaut/contracts/ForceSolver.sol",
+    "exportedSymbols": {
+      "ForceSolver": [
+        63
+      ],
+      "Meow": [
+        52
+      ]
+    },
+    "id": 64,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 51,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 52,
+        "linearizedBaseContracts": [
+          52
+        ],
+        "name": "Meow",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 64,
+        "src": "28:16:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 63,
+        "linearizedBaseContracts": [
+          63
+        ],
+        "name": "ForceSolver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "121:36:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 58,
+                        "name": "adr",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 54,
+                        "src": "145:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 57,
+                      "name": "selfdestruct",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 237,
+                      "src": "132:12:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 59,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "132:17:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 60,
+                  "nodeType": "ExpressionStatement",
+                  "src": "132:17:1"
+                }
+              ]
+            },
+            "id": 62,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "end",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 55,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 54,
+                  "name": "adr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 62,
+                  "src": "91:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "91:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "90:13:1"
+            },
+            "payable": true,
+            "returnParameters": {
+              "id": 56,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "121:0:1"
+            },
+            "scope": 63,
+            "src": "78:79:1",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 64,
+        "src": "48:112:1"
+      }
+    ],
+    "src": "0:160:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/mikes/OneDrive/Desktop/Ethereum/Ethernaut/contracts/ForceSolver.sol",
+    "exportedSymbols": {
+      "ForceSolver": [
+        63
+      ],
+      "Meow": [
+        52
+      ]
+    },
+    "id": 64,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 51,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".18"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 52,
+        "linearizedBaseContracts": [
+          52
+        ],
+        "name": "Meow",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 64,
+        "src": "28:16:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 63,
+        "linearizedBaseContracts": [
+          63
+        ],
+        "name": "ForceSolver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "121:36:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 58,
+                        "name": "adr",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 54,
+                        "src": "145:3:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 57,
+                      "name": "selfdestruct",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 237,
+                      "src": "132:12:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 59,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "132:17:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 60,
+                  "nodeType": "ExpressionStatement",
+                  "src": "132:17:1"
+                }
+              ]
+            },
+            "id": 62,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "end",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 55,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 54,
+                  "name": "adr",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 62,
+                  "src": "91:11:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 53,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "91:7:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "90:13:1"
+            },
+            "payable": true,
+            "returnParameters": {
+              "id": 56,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "121:0:1"
+            },
+            "scope": 63,
+            "src": "78:79:1",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 64,
+        "src": "48:112:1"
+      }
+    ],
+    "src": "0:160:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0x9Fd1A6A625BA90aE5B746E7aaBd2CCE95165d8b4",
+      "transactionHash": "0x355b444e459627fea3e03e0c08eb5b294f186580af47f5777ce2c0c35978bc23"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x593F551f4Cdd04aCCFacE132C7a7118D6D5B33FA",
+      "transactionHash": "0xc07e893af07432aa0a0599926c4208b086d2be68d42ce22e611d4fc220203f2c"
+    }
+  },
+  "schemaVersion": "3.0.16",
+  "updatedAt": "2019-10-15T20:18:17.470Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

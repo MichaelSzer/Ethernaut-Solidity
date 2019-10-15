@@ -491,7 +491,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 217,
+                              "referencedDeclaration": 231,
                               "src": "466:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -573,7 +573,7 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 220,
+                      "referencedDeclaration": 234,
                       "src": "426:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1092,7 +1092,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 217,
+                              "referencedDeclaration": 231,
                               "src": "466:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1174,7 +1174,7 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 220,
+                      "referencedDeclaration": 234,
                       "src": "426:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1240,7 +1240,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-14T22:51:07.721Z",
+  "updatedAt": "2019-10-15T20:11:40.771Z",
   "devdoc": {
     "methods": {}
   },
